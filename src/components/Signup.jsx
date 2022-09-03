@@ -101,7 +101,7 @@ const Signup = ()=> {
                     Submit
                 </Button>
 
-                <Link to = "/" style = {{marginLeft: "10px"}}>
+                <Link to = "/login" style = {{marginLeft: "10px"}}>
                 <Button variant="primary" type="submit" >
                     Login
                 </Button>
