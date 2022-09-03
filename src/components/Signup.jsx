@@ -40,7 +40,7 @@ const Signup = ()=> {
             else if(user.password.length < 6 | user.password.length > 30) {
                 alert('password should be min 6 length and max 30')
             }
-            else if(user.password != repassword) {
+            else if(user.password !== repassword) {
                 alert('Password and re password should match')
             }
             else {
@@ -53,7 +53,7 @@ const Signup = ()=> {
                     alert(res.response.data.message)
                 })
         
-                if(response && response.status == 201) {
+                if(response && response.status === 201) {
                     alert("User "+ response.data.firstName + " " + response.data.lastName +" created")
                     navigate("/login")
                 }                

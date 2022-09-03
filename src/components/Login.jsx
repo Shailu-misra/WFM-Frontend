@@ -23,7 +23,7 @@ const Login = ()=> {
             alert(res.response.data.message)
         })
 
-        if(response && response.status == 200) {
+        if(response && response.status === 200) {
             alert("User "+ response.data.firstName + " " + response.data.lastName +" logged in")
             console.log(response.data)
             localStorage.setItem('UPPCL_USER', JSON.stringify(response.data));
