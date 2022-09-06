@@ -22,15 +22,21 @@ function LoginUppcl(props) {
 
                   <div className="form-outline mb-4 d-flex align-items-center">
                   <label className="form-label px-3" htmlFor="form2Example11">Phone No.</label>
-                    <input type="text" id="form2Example11" className="form-control"
-                      placeholder="Phone number " />
+                    <input type="tel" pattern="[0-9]{10}" name="phoneno"id="form2Example11" className="form-control"
+                      placeholder="Phone number " required/>
                     
                   </div>
 
                   <div className="form-outline mb-4 d-flex align-items-center ">
                     <label className="form-label px-3" htmlFor="form2Example22">Password</label>
-                    <input type="password" id="form2Example22" className="form-control" />
+                    <input type="password" name="password=" id="form2Example22" className="form-control" />
                     
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                     <input class="form-check-input px-2" type="checkbox" value="" id="flexCheck" />
+                     <label class="form-check-label px-3" for="flexCheckDefault"> Check For Lineman Login
+                        
+                     </label>
                   </div>
 
                   <div className="text-center pt-1 mb-5 pb-1">
