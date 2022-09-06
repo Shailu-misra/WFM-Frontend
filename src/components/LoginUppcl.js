@@ -1,8 +1,11 @@
 import React from 'react'
 import './Loginlogo.css'
+import Header from './Header'
 
 function LoginUppcl(props) {
   return (
+    <div>
+    
     <section className="h-100 gradient-form bg-dark " id="loginsec" >
   <div className="container  py-5 h-150">
     <div className="row d-flex justify-content-center align-items-center h-100">
@@ -63,6 +66,7 @@ function LoginUppcl(props) {
     </div>
   </div>
 </section>
+</div>
   )
 }
 
