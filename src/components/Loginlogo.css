@@ -1,0 +1,18 @@
+#back1
+{
+    background-image: url(uppcl3.png) ;
+    /* width: 185px; */
+    height: 140px;
+    background-repeat: no-repeat;
+    /* border: 5px solid red; */
+    display: flex;
+    width: 600px;
+    margin:auto;
+    align-items: center;
+    
+
+    
+
+}
+
+  
