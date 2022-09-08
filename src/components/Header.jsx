@@ -1,24 +1,34 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 const Header = () => {
+
+
     return (
         <div>
-            <nav class="navbar navbar-dark bg-dark">
+            <nav className="navbar navbar-dark bg-dark p-3 " >
 
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="button">Sign Out</button>
+                <ul className="nav justify-content-end navbar-dark">
+                    <li className="nav-item">
+                        <a className="navbar-brand" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li className="nav-item">
+                        <a className="navbar-brand" href="/report">Disconnection Report</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li className="nav-item">
+                        <a className="navbar-brand " href="/lineman">Line Man</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                    <li className="nav-item">
+                        <a className="navbar-brand " href="/workAllocation">Work Allocation</a>
                     </li>
                 </ul>
+
+                
+                <div className="my-2 my-lg-0">
+                    <Link to="/Login">
+                        <button className="btn btn-outline-success my-2 my-sm-0" type="button">Sign In</button>
+                    </Link>
+                        <button className="btn btn-outline-success my-2 my-sm-0" type="button">Sign Out</button>
+                </div>
             </nav>
         </div>
     );

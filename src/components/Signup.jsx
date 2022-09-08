@@ -28,7 +28,7 @@ const Signup = ()=> {
         let repassword = rePasswordRef.current.value
         
         if(user.email && user.firstName && user.lastName && user.age && user.password && repassword) {
-            if(user.age < 10 || user.age > 60) {
+            if(user.age < 18 || user.age > 60) {
                 alert('Age should be between 10 and 60')
             }
             else if(user.firstName < 6 || user.firstName > 30) {
